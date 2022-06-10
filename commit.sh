@@ -3,5 +3,5 @@
 
 git add -A
 git commit -m 'accomplish'
-git push -u origin main
+git push  origin main
 
