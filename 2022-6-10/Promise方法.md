@@ -69,7 +69,7 @@ class MyPromise {
     });
   }
   finally(onFinally) {
-    this.then(onFinally, onFinally);
+    return this.then(onFinally, onFinally);
   }
   catch(onRejected) {
     return this.then(null, onRejected);
