@@ -17,7 +17,6 @@ Function.prototype.callTwo = function (context) {
   for (let i = 1; i < arguments.length; i++) {
     args.push("arguments[" + i + "]");
   }
-  console.log(args);
   /* args会调用数组的toString方法变为 arguments[1] arguments[2] argument[3] */
   var result = eval("context.fn( " + args + ")");
   /* eval作用域中的代码  context.fn(arguments[0],arguments[1]) */
